@@ -4,6 +4,7 @@ This repository contains a basic example of inheritance in Java. The parent clas
 
 1. **Inheritance**: The child class inherits properties and methods from the parent class.
 2. **Method Overloading**: The child class can add its own methods in addition to the inherited ones.
+3. **Method Overriding**:
 
 ### Classes and Methods:
 - **ExtendExample**: The parent class with an integer variable `i` and a method `printValue()`.
