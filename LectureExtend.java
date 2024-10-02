@@ -1,16 +1,25 @@
 // Define the parent class
+
 class ExtendExample {
-    int i = 2;  // Variable to store integer value
+
+    int i = 2;
+    int i2 = 1;  // Variable to store integer value
 
     // Method to print the value of i
     public void printValue() {
         System.out.println(i);  // Prints the value of i
     }
+
+    public void printValue2() {
+        System.out.println(i2);  // Prints the value of i
+    }
 }
 
 // Define the child class that extends the parent class
 class ExtendExampleTwo extends ExtendExample {
+
     float j = 4;  // Variable to store float value
+    float j2 = 3;
 
     // Method to print the sum of j and i
     void printValueTwo() {
@@ -26,10 +35,15 @@ class ExtendExampleTwo extends ExtendExample {
     void Three(int l) {
         System.out.println(l);  // Prints the passed integer l
     }
+
+    //(abstraction) Overriding printValue method to print the value of j
+    public void printValue2() {
+        System.out.println(j2);  // Prints the value of i
+    }
 }
 
-
 public class LectureExtend {
+
     public static void main(String[] args) {
         // Create an instance of the child class
         ExtendExampleTwo obj = new ExtendExampleTwo();
@@ -52,5 +66,8 @@ public class LectureExtend {
         // Define a variable l and call method Three to print it
         int l = 5;
         obj.Three(l);  // Prints 5
+
+      obj.printValue2();
+      
     }
 }
