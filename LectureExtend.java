@@ -67,7 +67,7 @@ public class LectureExtend {
         int l = 5;
         obj.Three(l);  // Prints 5
 
-      obj.printValue2();
-      
+        obj.printValue2();
+
     }
 }
